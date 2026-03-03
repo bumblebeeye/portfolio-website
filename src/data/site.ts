@@ -4,9 +4,9 @@ export const siteConfig = {
   title: "Aspiring Software Engineer / Data & AI Graduate",
   intro:
     "I build practical software and data-driven solutions with a focus on clean user experience, clear communication, and reliable delivery.",
-  email: "peter.xinpei.ye@email.com",
-  linkedin: "https://www.linkedin.com/in/xinpei-ye",
-  github: "https://github.com/xinpeiye",
+  email: "xinpeiye21@gmail.com",
+  linkedin: "https://www.linkedin.com/in/xinpei-ye-7975a4347/",
+  github: "https://github.com/bumblebeeye",
   resumePath: "/resume/peter-xinpei-ye-resume.pdf",
   techStack: [
     "TypeScript",

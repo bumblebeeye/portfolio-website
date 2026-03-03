@@ -25,7 +25,7 @@ export default function ContactPage() {
             rel="noreferrer"
             className="mt-3 block text-base font-medium text-slate-900 hover:text-brand-700"
           >
-            linkedin.com/in/xinpei-ye
+            linkedin.com/xinpei-ye
           </Link>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
