@@ -40,14 +40,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Section title="Tech Stack" subtitle="Core technologies I currently use for full-stack and data-driven projects.">
-        <ul className="flex flex-wrap gap-3">
-          {siteConfig.techStack.map((tech) => (
-            <li key={tech} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">
-              {tech}
-            </li>
-          ))}
-        </ul>
+      <Section
+        title="Skills & Tools"
+        subtitle="Core technologies and tools I use for software engineering and data-driven projects."
+      >
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <h3 className="text-base font-semibold text-slate-900">Languages</h3>
+            <p className="mt-2 text-slate-600">Python, SQL, Java,TypeScript, JavaScript</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <h3 className="text-base font-semibold text-slate-900">Frontend</h3>
+            <p className="mt-2 text-slate-600">HTML/CSS/PHP, React, Next.js, Tailwind CSS, Bootstrap</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <h3 className="text-base font-semibold text-slate-900">Backend & Data</h3>
+            <p className="mt-2 text-slate-600">Node.js, REST APIs, Google Cloud, Azure, PostgreSQL, mangoDB</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <h3 className="text-base font-semibold text-slate-900">Tools</h3>
+            <p className="mt-2 text-slate-600">Git/GitHub, Cursor, Codex, VS Code, Netlify</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <h3 className="text-base font-semibold text-slate-900">Data Analysis & Visualization</h3>
+            <p className="mt-2 text-slate-600">Power BI, Tableau, R, Excel</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <h3 className="text-base font-semibold text-slate-900">Machine Learning / AI</h3>
+            <p className="mt-2 text-slate-600">LLMs, model fine-tuning</p>
+          </div>
+        </div>
       </Section>
 
       <Section

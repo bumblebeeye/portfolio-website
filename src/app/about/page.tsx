@@ -39,27 +39,6 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section title="Skills & Tools">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <h3 className="text-base font-semibold text-slate-900">Languages</h3>
-            <p className="mt-2 text-slate-600">TypeScript, JavaScript, Python, SQL</p>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <h3 className="text-base font-semibold text-slate-900">Frontend</h3>
-            <p className="mt-2 text-slate-600">React, Next.js, Tailwind CSS, HTML/CSS</p>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <h3 className="text-base font-semibold text-slate-900">Backend & Data</h3>
-            <p className="mt-2 text-slate-600">Node.js, REST APIs, PostgreSQL, data analysis workflows</p>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <h3 className="text-base font-semibold text-slate-900">Tools</h3>
-            <p className="mt-2 text-slate-600">Git/GitHub, VS Code, Netlify, testing and debugging practices</p>
-          </div>
-        </div>
-      </Section>
-
       <Section title="What I’m Looking For" className="bg-slate-50">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
           <p className="leading-7 text-slate-700">

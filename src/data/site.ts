@@ -7,17 +7,7 @@ export const siteConfig = {
   email: "xinpeiye21@gmail.com",
   linkedin: "https://www.linkedin.com/in/xinpei-ye-7975a4347/",
   github: "https://github.com/bumblebeeye",
-  resumePath: "/resume/peter-xinpei-ye-resume.pdf",
-  techStack: [
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Python",
-    "SQL",
-    "Node.js",
-    "Git"
-  ]
+  resumePath: "/resume/peter-xinpei-ye-resume.pdf"
 };
 
 export const navLinks = [
