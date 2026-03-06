@@ -40,13 +40,6 @@ export default function ContactPage() {
           </Link>
         </div>
       </div>
-
-      <div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-        <h3 className="text-base font-semibold text-slate-900">Optional: Contact Form Placeholder</h3>
-        <p className="mt-2 text-slate-600">
-          reminder: add a simple front-end form here later if needed
-        </p>
-      </div>
     </Section>
   );
 }
