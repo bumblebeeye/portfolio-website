@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Home"
 };
 
-const featuredProjects = projects.filter((project) => project.status === "featured");
+const featuredProjects = projects.filter((project) => project.status === "featured").slice(0, 2);
 
 export default function HomePage() {
   return (

@@ -5,7 +5,10 @@ export interface Project {
   summary: string;
   techStack: string[];
   impact: string;
-  githubUrl: string;
-  liveDemoUrl: string;
+  githubUrl?: string;
+  liveDemoUrl?: string;
+  detailsPath?: string;
   status?: ProjectStatus;
+  isCurrentSite?: boolean;
+  progressNote?: string;
 }
