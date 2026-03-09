@@ -20,6 +20,16 @@ export const projects: Project[] = [
       "Built and deployed an end-to-end product (Vercel + Render + Railway) with explainable scoring, history tracking, and Gemini-powered suggestions with reliable fallback logic.",
     githubUrl: "https://github.com/bumblebeeye/Resume-Job-Match-Analyzer",
     liveDemoUrl: "https://resume-job-match-analyzer-rosy.vercel.app/",
+    caseStudies: [
+      {
+        label: "Case Study (Vercel + Render + Railway)",
+        href: "/projects/resume-job-match-analyzer-vrr"
+      },
+      {
+        label: "Case Study (AWS Deployed)",
+        disabled: true
+      }
+    ],
     status: "featured"
   },
   {
@@ -32,8 +42,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/bumblebeeye/portfolio-website",
     liveDemoUrl: "https://xinpei.netlify.app/",
     status: "featured",
-    isCurrentSite: true,
-    progressNote: "AWS deployment is in progress."
+    isCurrentSite: true
   },
   {
     title: "Victoria Energy Demand, Pricing, and Emissions Dashboard",
