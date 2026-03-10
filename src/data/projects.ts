@@ -2,9 +2,9 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
-    title: "AI-Powered Resume–Job Match Analyzer",
+    title: "Resume–Job Match Analyzer",
     summary:
-      "A full-stack Resume-Job Match Analyzer that compares resumes against job descriptions, scores fit, highlights skill gaps, and generates AI-assisted improvement suggestions.",
+      "A full-stack Resume-Job Match Analyzer with AI-assisted analysis and cloud deployment",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     title: "Personal Portfolio Website",
     summary:
-      "A production-ready portfolio website designed for job applications, with a recruiter-friendly structure for presenting projects, experience, and contact details clearly.",
+      "A production-ready portfolio website designed for job applications",
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Docker", "Netlify"],
     impact:
       "Built a maintainable personal brand site with reusable components, typed content data, responsive layouts, and a deployment workflow that makes future updates fast and low-risk.",
@@ -53,25 +53,5 @@ export const projects: Project[] = [
       "Designed a decision-support dashboard that surfaces pricing and demand patterns across seasons, weather, and holidays while highlighting emissions-heavy sectors.",
     detailsPath: "/projects/victoria-energy-dashboard",
     liveDemoUrl: "https://public.tableau.com/views/assignment1_17249770904430/Dashboard1?:showVizHome=no"
-  },
-  {
-    title: "Coming Soon: Data Analytics Dashboard",
-    summary:
-      "An interactive dashboard for exploring KPIs and trends with clean visual summaries and filtering.",
-    techStack: ["React", "TypeScript", "Chart.js", "SQL"],
-    impact: "Designed to turn raw metrics into actionable insights for non-technical stakeholders.",
-    githubUrl: "https://github.com/your-username",
-    liveDemoUrl: "https://example.com",
-    status: "coming-soon"
-  },
-  {
-    title: "Coming Soon: AI-Powered Study Assistant",
-    summary:
-      "A productivity web app concept to help students organize notes and generate revision prompts.",
-    techStack: ["Next.js", "Python", "FastAPI", "OpenAI API"],
-    impact: "Planned to improve study efficiency with personalized feedback and task tracking.",
-    githubUrl: "https://github.com/your-username",
-    liveDemoUrl: "https://example.com",
-    status: "coming-soon"
   }
 ];
