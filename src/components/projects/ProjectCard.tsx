@@ -37,13 +37,30 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="mt-4">
         <h4 className="text-sm font-semibold text-slate-800">Tech Stack</h4>
-        <ul className="mt-2 flex flex-wrap gap-2">
-          {project.techStack.map((tech) => (
-            <li key={tech} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs text-slate-700">
-              {tech}
-            </li>
-          ))}
-        </ul>
+        {project.techStackGroups && project.techStackGroups.length > 0 ? (
+          <div className="mt-3 grid gap-3">
+            {project.techStackGroups.map((group) => (
+              <div key={group.label} className="rounded-xl border border-slate-200 bg-slate-50 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{group.label}</p>
+                <ul className="mt-2 flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <li key={item} className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-700">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {project.techStack.map((tech) => (
+              <li key={tech} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs text-slate-700">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       <div className="mt-4">

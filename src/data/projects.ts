@@ -14,7 +14,31 @@ export const projects: Project[] = [
       "Gemini API",
       "Vercel",
       "Render",
-      "Railway"
+      "Railway",
+      "AWS Amplify",
+      "AWS App Runner",
+      "AWS RDS",
+      "AWS S3",
+      "AWS Secrets Manager"
+    ],
+    techStackGroups: [
+      {
+        label: "Core Product Stack",
+        items: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "PostgreSQL", "Gemini API"]
+      },
+      {
+        label: "Deployment Stacks",
+        items: [
+          "Vercel",
+          "Render",
+          "Railway",
+          "AWS Amplify",
+          "AWS App Runner",
+          "AWS RDS",
+          "AWS S3",
+          "AWS Secrets Manager"
+        ]
+      }
     ],
     impact:
       "Built and deployed an end-to-end product (Vercel + Render + Railway) with explainable scoring, history tracking, and Gemini-powered suggestions with reliable fallback logic.",

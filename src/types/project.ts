@@ -6,10 +6,16 @@ export interface ProjectCaseStudy {
   disabled?: boolean;
 }
 
+export interface ProjectTechStackGroup {
+  label: string;
+  items: string[];
+}
+
 export interface Project {
   title: string;
   summary: string;
   techStack: string[];
+  techStackGroups?: ProjectTechStackGroup[];
   impact: string;
   githubUrl?: string;
   liveDemoUrl?: string;
