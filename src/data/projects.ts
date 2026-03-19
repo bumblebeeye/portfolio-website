@@ -27,7 +27,7 @@ export const projects: Project[] = [
       },
       {
         label: "Case Study (AWS Deployed)",
-        disabled: true
+        href: "/projects/resume-job-match-analyzer-aws"
       }
     ],
     status: "featured"
