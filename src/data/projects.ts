@@ -43,7 +43,7 @@ export const projects: Project[] = [
     impact:
       "Built and deployed an end-to-end product with explainable scoring, history tracking, and Gemini-powered suggestions with reliable fallback logic.",
     githubUrl: "https://github.com/bumblebeeye/Resume-Job-Match-Analyzer",
-    liveDemoUrl: "https://resume-job-match-analyzer-rosy.vercel.app/",
+    liveDemoUrl: "https://codex-aws-phase6.d7aj7hvvxk2xv.amplifyapp.com/",
     caseStudies: [
       {
         label: "Phase 1: Full-stack MVP and initial production deployment",
