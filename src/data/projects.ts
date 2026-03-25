@@ -41,17 +41,21 @@ export const projects: Project[] = [
       }
     ],
     impact:
-      "Built and deployed an end-to-end product (Vercel + Render + Railway) with explainable scoring, history tracking, and Gemini-powered suggestions with reliable fallback logic.",
+      "Built and deployed an end-to-end product with explainable scoring, history tracking, and Gemini-powered suggestions with reliable fallback logic.",
     githubUrl: "https://github.com/bumblebeeye/Resume-Job-Match-Analyzer",
     liveDemoUrl: "https://resume-job-match-analyzer-rosy.vercel.app/",
     caseStudies: [
       {
-        label: "Case Study (Vercel + Render + Railway)",
+        label: "Phase 1: Full-stack MVP and initial production deployment",
         href: "/projects/resume-job-match-analyzer-vrr"
       },
       {
-        label: "Case Study (AWS Deployed)",
+        label: "Phase 2: AWS deployment and cloud architecture extension",
         href: "/projects/resume-job-match-analyzer-aws"
+      },
+      {
+        label: "Phase 3 — Security Hardening and Operational Maturity (Coming Soon)",
+        disabled: true
       }
     ],
     status: "featured"
