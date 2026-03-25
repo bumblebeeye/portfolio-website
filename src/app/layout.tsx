@@ -6,8 +6,8 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Peter (Xinpei Ye) | Portfolio",
-    template: "%s | Peter (Xinpei Ye)"
+    default: "Peter (Xinpei) Ye | Portfolio",
+    template: "%s | Peter (Xinpei) Ye"
   },
   description:
     "Portfolio of Peter (Xinpei Ye), an aspiring software engineer and data & AI graduate building modern web applications."

@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Peter (Xinpei Ye)",
+  name: "Peter (Xinpei) Ye",
   shortName: "Peter Ye",
   title: "Aspiring Software Engineer / Data & AI Graduate",
   intro:
