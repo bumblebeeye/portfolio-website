@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function ResumeAnalyzerPhase3Page() {
   return (
     <Section
-      title="Phase 7: Hardening & DevOps (In Progress)"
+      title="Phase 7: Hardening & DevOps"
       subtitle="Resume–Job Match Analyzer Phase 3 — Security Hardening and Operational Maturity."
     >
       <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
@@ -96,6 +96,66 @@ export default function ResumeAnalyzerPhase3Page() {
           </div>
 
           <div>
+            <h3 className="text-base font-semibold text-slate-900">6) Observability</h3>
+            <p className="mt-2 leading-7">I added the most necessary low-cost CloudWatch alarms:</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>App Runner request latency</li>
+              <li>RDS CPU utilization</li>
+              <li>RDS free storage space</li>
+            </ul>
+            <p className="mt-3 leading-7">
+              This gave the project basic operational visibility without adding expensive observability tooling.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-slate-900">7) Deployment safety</h3>
+            <p className="mt-2 leading-7">I added a safer release process with:</p>
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>manual production deployment control</li>
+              <li>approval before production release</li>
+              <li>smoke test checks after deployment</li>
+            </ul>
+            <p className="mt-3 leading-7">I did not create a separate always-on staging environment.</p>
+            <p className="mt-3 leading-7">
+              For this project, a full staging/production split would increase both cost and complexity, so I chose the
+              more efficient tradeoff: safer release discipline without paying for duplicated infrastructure.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-slate-900">
+              8) AWS private networking hardening (planned, postponed due to extra cost on aws)
+            </h3>
+            <p className="mt-2 leading-7">
+              The planned next-step design is to move toward a more fully AWS-native private architecture:
+            </p>
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>keep App Runner publicly reachable for users</li>
+              <li>move App Runner outbound traffic into a VPC connector</li>
+              <li>make RDS private only</li>
+              <li>restrict DB access to App Runner security groups</li>
+              <li>use an S3 VPC endpoint</li>
+              <li>
+                replace the current external model dependency with an AWS-native model path through Bedrock, avoiding
+                the need for NAT-based internet egress for LLM access
+              </li>
+            </ul>
+            <p className="mt-3 leading-7">I postponed this step for now.</p>
+            <p className="mt-3 leading-7">
+              The original private-networking design became more complex because the project currently depends on both
+              S3 and an external LLM provider. In particular, using Gemini in a private setup would require outbound
+              internet access through NAT, which adds fixed monthly cost and extra networking maintenance.
+            </p>
+            <p className="mt-3 leading-7">
+              A better long-term option is to move the model layer to Bedrock inside AWS. That would reduce
+              infrastructure complexity, lower ongoing cost, and make the private-networking design more consistent
+              with the rest of the stack. For a personal portfolio project, I decided to document this improved target
+              design and defer implementation for now rather than add the extra cost immediately.
+            </p>
+          </div>
+
+          <div>
             <h3 className="text-base font-semibold text-slate-900">Result so far</h3>
             <p className="mt-2 leading-7">
               By the end of this phase, the project had moved from a functional deployed app to a more
@@ -107,25 +167,13 @@ export default function ResumeAnalyzerPhase3Page() {
               <li>safer upload handling</li>
               <li>more consistent API behavior</li>
               <li>basic abuse protection</li>
+              <li>basic monitoring and alerts</li>
+              <li>a more controlled production deployment workflow</li>
             </ul>
             <p className="mt-3 leading-7">
               This phase reflects how I think about software beyond feature delivery: not just building something that
               works, but building something that is easier to test, debug, secure, and operate.
             </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-slate-900">Current progress</h3>
-            <p className="mt-2 leading-7">
-              This hardening and DevOps phase is still in progress. The remaining work is focused on AWS-side
-              operational improvements, including:
-            </p>
-            <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>a private network path for RDS access</li>
-              <li>observability and CloudWatch alarms</li>
-              <li>a safer deployment workflow</li>
-              <li>runbooks and final portfolio documentation</li>
-            </ul>
           </div>
         </div>
 

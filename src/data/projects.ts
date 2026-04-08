@@ -54,7 +54,7 @@ export const projects: Project[] = [
         href: "/projects/resume-job-match-analyzer-aws"
       },
       {
-        label: "Phase 3 — Security Hardening and Operational Maturity (still in progress)",
+        label: "Phase 3 — Security Hardening and Operational Maturity",
         href: "/projects/resume-job-match-analyzer-phase3"
       }
     ],
