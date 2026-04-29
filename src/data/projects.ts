@@ -43,21 +43,7 @@ export const projects: Project[] = [
     impact:
       "Built and deployed an end-to-end product with explainable scoring, history tracking, and Gemini-powered suggestions with reliable fallback logic.",
     githubUrl: "https://github.com/bumblebeeye/Resume-Job-Match-Analyzer",
-    liveDemoUrl: "https://codex-aws-phase6.d7aj7hvvxk2xv.amplifyapp.com/",
-    caseStudies: [
-      {
-        label: "Phase 1: Full-stack MVP and initial production deployment",
-        href: "/projects/resume-job-match-analyzer-vrr"
-      },
-      {
-        label: "Phase 2: AWS deployment and cloud architecture extension",
-        href: "/projects/resume-job-match-analyzer-aws"
-      },
-      {
-        label: "Phase 3 — Security Hardening and Operational Maturity",
-        href: "/projects/resume-job-match-analyzer-phase3"
-      }
-    ],
+    detailsPath: "/projects/resume-job-match-analyzer",
     status: "featured"
   },
   {
